@@ -31,3 +31,7 @@ $(document).ready(function() {
     //Save data to local storage
     $(".saveBtn").click(function (event) {
         event.preventDefault();
+        var value = $(this).siblings(".time-block").val();
+        var time = $(this).parent().attr("id").split("-")[1];
+        localStorage.setItem(time,value);
+    });
