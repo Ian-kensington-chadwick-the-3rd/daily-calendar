@@ -46,4 +46,10 @@ $(document).ready(function() {
      $("#hour-15 .time-block").val(localStorage.getItem("15"));
      $("#hour-16 .time-block").val(localStorage.getItem("16"));
      $("#hour-17 .time-block").val(localStorage.getItem("17"));
- 
+      
+      //Clear button function for clearing content and local storage
+      $("#clearFieldsBtn").click(function(event) {
+        event.preventDefault;
+        $("textArea").val("");
+        localStorage.clear();
+    });
