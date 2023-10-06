@@ -26,3 +26,8 @@ $(document).ready(function() {
             $(this).addClass("past");
         }
     });
+
+    
+    //Save data to local storage
+    $(".saveBtn").click(function (event) {
+        event.preventDefault();
